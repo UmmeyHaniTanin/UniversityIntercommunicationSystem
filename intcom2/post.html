@@ -1,0 +1,28 @@
+
+<html>
+<h1>Post here</h1>
+<hr/>
+<?php
+if($_POST['post'])
+{
+  $title=$_POST['title'];
+  $body=$_POST['body'];
+  if($title && $body)
+  {
+    
+  }
+  else
+}
+
+?>
+<form action='post.php' method='post' >
+  Title:<br>
+  <input type='text' name='title' ><p>
+  body:<br>
+  <textarea rows='6' cols='30'></textarea>
+  <input type='submit' name='post' value='Post this news' >
+  
+</form>
+
+
+</html>

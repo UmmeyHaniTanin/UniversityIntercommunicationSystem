@@ -1,0 +1,17 @@
+/* CSS Document */
+#a{
+	position:absolute;
+	height:40px;
+	width:1146px;
+	background-image:url(iiuc.JPG);
+	top: -2px;
+	left: 12px;
+}
+#b{
+	position:absolute;
+	height:90%;
+	width:100%;
+	top:102px;
+	background-color:#339999;
+	left: 3px;
+}

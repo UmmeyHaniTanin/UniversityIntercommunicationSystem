@@ -1,0 +1,20 @@
+<html>
+<h1>News</h1>
+<hr>
+<?php
+echo "News will go here";
+mysql_connect("localhost","root","") or die(mysql_error());
+mysql_select_db("intcom");
+$getnews=mysql_query("SELECT * from news");
+while($row=mysql_fetch_assoc($getnews))
+{
+$id=$row['id'];
+$title=$row['title'];
+$body=$row['body'];
+$date=$row['date'];
+echo "$title posted on $date<br>
+      $body
+	  <hr>";
+}
+?>
+</html>
